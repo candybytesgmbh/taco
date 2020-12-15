@@ -19,13 +19,15 @@ Use ViewModel to hold the content.
 Access content with LiveData in views with databinding.
 
 Your main activity UI should look like this:
-MainActivity (use bottom bar navigation to switch between Categories and Search)
+(use bottom bar navigation to switch between Categories and Search)
+<br>
+MainActivity 
 <br>├ CategoriesFragment</br>
 <br>│     └FoodListFragment</br>
 <br>│          └FoodFragment</br>
 <br>└ SearchFoodFragment</br>
 <br>     └FoodFragment</br>
-        
+</br>
 Prepare all missing Fragments and the general navigation structure.
 
 ###### 2. Web requests
