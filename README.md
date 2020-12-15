@@ -1,2 +1,5 @@
-# taco
-Android developer taco challenge
+# Taco challenge
+For Android developer candidates (V1.0)
+
+
+
