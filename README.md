@@ -1,5 +1,5 @@
 # Taco challenge
-#### For Android developer candidates (V1.0)
+#### Android developer candidates (V1.0)
 
 ## Instructions
 - Fork this repository with your private GitHub account
@@ -20,11 +20,11 @@ Access content with LiveData in views with databinding.
 
 Your main activity UI should look like this:
 MainActivity (use bottom bar navigation to switch between Categories and Search)
-<br>    ├ CategoriesFragment
-<br>    │    └FoodListFragment
-<br>    │        └FoodFragment
-<br>    └ SearchFoodFragment
-<br>        └FoodFragment
+<br>    ├ CategoriesFragment</br>
+<br>    │    └FoodListFragment</br>
+<br>    │        └FoodFragment</br>
+<br>    └ SearchFoodFragment</br>
+<br>        └FoodFragment</br>
         
 Prepare all missing Fragments and the general navigation structure.
 
