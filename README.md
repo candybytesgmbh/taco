@@ -22,11 +22,11 @@ Your main activity UI should look like this:
 (use bottom bar navigation to switch between Categories and Search)
 <br>
 MainActivity 
-<br>├ CategoriesFragment</br>
-<br>│     └FoodListFragment</br>
-<br>│          └FoodFragment</br>
-<br>└ SearchFoodFragment</br>
-<br>     └FoodFragment</br>
+├ CategoriesFragment
+│     └FoodListFragment
+│          └FoodFragment
+└ SearchFoodFragment
+     └FoodFragment
 </br>
 Prepare all missing Fragments and the general navigation structure.
 
