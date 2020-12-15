@@ -24,8 +24,29 @@
 ### Candy
 #### If you are still eager to complete more tasks finish the bonus assignments
 
-###### 🍭 
+###### 🍭 Edge to Edge 
+Work with display insets and create and edge to edge feeling. Top and bottom bars should fade
+away when scrolling in a List view. 
+Tip: use helper library from Chris
+https://github.com/chrisbanes/insetter
 
-## Congratulation you finished challenge
-#### Make sure everything is uploaded in your git repository
-#### Tip: don't forget about documentation
+###### 🍭 Create a custom theme
+Introduce your custom design for font, colors, small medium and large components.
+Tip: checkout material design guidelines
+https://material.io/design/material-studies/fortnightly.html#shape
+
+###### 🍭 Memory leak
+Finding memory leaks is a very important task when developing high quality apps. 
+Make sure there is no memory leak. I might have inserted one ;-)
+Tip: there is a nice library for detecting leaks
+https://square.github.io/leakcanary/
+
+###### 🍭 Performance
+Developing apps for all kind of devices is essential on Android and therefore performance 
+optimization is crucial. Initialize all necessary libraries before Application.onCreate() is called
+Move image library initialization into content providers, checkout this helper library
+https://developer.android.com/topic/libraries/app-startup
+
+## Congratulation you finished the challenge
+#### Make sure everything is pushed to your git repository
+#### Tip: don't forget about code documentation
