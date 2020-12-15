@@ -21,12 +21,12 @@ Access content with LiveData in views with databinding.
 Your main activity UI should look like this:
 (use bottom bar navigation to switch between Categories and Search)
 <br>
-MainActivity 
-├ CategoriesFragment
-│     └FoodListFragment
-│          └FoodFragment
-└ SearchFoodFragment
-     └FoodFragment
+	MainActivity 
+	├ CategoriesFragment
+	│	└FoodListFragment
+	│ 	└FoodFragment
+	└ SearchFoodFragment
+		└FoodFragment
 </br>
 Prepare all missing Fragments and the general navigation structure.
 
@@ -61,16 +61,14 @@ and displayed on the FoodFragment everytime the user shows the detailed food ite
 - Make sure to use ActivityResultContracts. 
 - Use image cache library to display the picture
 
-
 ###### 7. Load category name on food detail screen
 Request category name for this food item from web dynamically when its shown on detail screen.
- 
+
 ###### 8. Fragment transitions
 Use Material motion transitions of your choosing to transform between fragments.
 Take a look at material components API
 
 - Tip: https://codelabs.developers.google.com/codelabs/material-motion-android
-
 
 ### Some extra candy
 #### If you are still eager to complete more tasks go ahead and finish the bonus assignments
