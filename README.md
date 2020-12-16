@@ -18,13 +18,15 @@ Version 1.0
 ### Pre-setup
 The following structure and libraries are already provided. Please do not start a new project,
 use the current setup to continue in order to save time.
+##### This repository provides
+- A unfinished basic App implementation to start
 - Dependency injection with Hilt
 - Database access with Room
 - REST service client with Retrofit
 - List view items
 - Basic navigation pattern
 
-##### Libraries to use
+##### Links to Libraries you might find helpful
 * [Foundation][0] - Components for core system capabilities, Kotlin extensions and support for
   multidex and automated testing.
   * [AppCompat][1] - Degrade gracefully on older versions of Android.
@@ -72,23 +74,16 @@ use the current setup to continue in order to save time.
 [93]: https://developer.android.com/training/dependency-injection
 
 
-## Tasks
+## Your tasks
 
 ###### 1. Navigation & wire frames
 Use Jetpack Navigation to navigate between Fragments.
 Use ViewModel to hold the content.
-Access content with LiveData in views with databinding.
+Store content in LiveData, access it in views with databinding.
 
 Your main activity UI should look like this:
 (use bottom bar navigation to switch between Categories and Search)
-<br>
-	MainActivity 
-	├ CategoriesFragment
-	│	└FoodListFragment
-	│ 	└FoodFragment
-	└ SearchFoodFragment
-		└FoodFragment
-</br>
+![GitHub Logo](/images/structure.png)
 Prepare all missing Fragments and the general navigation structure.
 
 ###### 2. Web requests
@@ -101,28 +96,30 @@ Access the local database provided in the App assets to load "food" information.
 Load search results based on "description" of a food item. Display search results as a single
 column list. Use paging adapters, not load all search results at once into your list.
 
-###### 4. Category details
-Selecting a category in the CategoriesFragment leads the user to the FoodListFragment, showing all 
+###### 5. Search
+Add a search option into the toolbar, filter database food results with search term.
+
+###### 6. Category details
+Selecting a category in the CategoryListFragment leads the user to the FoodListFragment, showing all 
 foods that are added to this category. Show category name at the top, use navigation arguments to 
 send information between fragments. Access the food database and query all foods that
 have the selected category, again use paging. Display a preview information of a food item.  
 
-###### 5. Food details
+###### 7. Food details
 When selecting a result on SearchFoodFragment or an item in FoodListFragment the detail screen of a food 
 (FoodFragment) should be opened. Here you should show more details of a single food, exactly like
 the UI/UX from Figma describes it.
 
 ![GitHub Logo](/images/detail.webp)
 
-- Figma UI/UX file: https://www.figma.com/file/5UjQCIHu8yv9si2tdBiO47/Taco---Detail?node-id=0%3A1
-- Tip: use a ConstraintLayout
+- Figma UI/UX (free registration required): https://www.figma.com/file/5UjQCIHu8yv9si2tdBiO47/Taco---Detail?node-id=0%3A1
 
 ###### 6. Add image to food detail
 Let the user add an Image via an ImagePicker or Camera to a single food item. The image should be stored locally
 and displayed on the FoodFragment everytime the user shows the detailed food item.
 
 - Make sure to use ActivityResultContracts. 
-- Use image cache library to display the picture
+- Use a image cache library to display the picture
 
 ###### 7. Load category name on food detail screen
 Request category name for this food item from web dynamically when its shown on detail screen.
