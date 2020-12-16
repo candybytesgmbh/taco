@@ -97,24 +97,25 @@ Load search results based on "description" of a food item. Display search result
 column list. Use paging adapters, not load all search results at once into your list.
 
 ###### 5. Search
-Add a search option into the toolbar, filter database food results with search term.
+Add a search option into the toolbar, filter database food results by the search term.
 
 ###### 6. Category details
 Selecting a category in the CategoryListFragment leads the user to the FoodListFragment, showing all 
 foods that are added to this category. Show category name at the top, use navigation arguments to 
 send information between fragments. Access the food database and query all foods that
-have the selected category, again use paging. Display a preview information of a food item.  
+have the selected category, again use paging. Display a preview information of a food item. 
+Might make sense to use the same 
 
 ###### 7. Food details
 When selecting a result on SearchFoodFragment or an item in FoodListFragment the detail screen of a food 
-(FoodFragment) should be opened. Here you should show more details of a single food, exactly like
-the UI/UX from Figma describes it.
+(FoodFragment) should be opened. More details of a single food should be displayed on that screen, exactly like
+the UI/UX from Figma describes it UI components. (Font, Color, Shape, Size...)
 
 ![GitHub Logo](/images/detail.webp)
 
 - Figma UI/UX (free registration required): https://www.figma.com/file/5UjQCIHu8yv9si2tdBiO47/Taco---Detail?node-id=0%3A1
 
-###### 6. Add image to food detail
+###### 6. Add an image to food detail
 Let the user add an Image via an ImagePicker or Camera to a single food item. The image should be stored locally
 and displayed on the FoodFragment everytime the user shows the detailed food item.
 
@@ -123,12 +124,10 @@ and displayed on the FoodFragment everytime the user shows the detailed food ite
 
 ###### 7. Load category name on food detail screen
 Request category name for this food item from web dynamically when its shown on detail screen.
+By clicking on the category the user can jump to the category detail page. 
 
-###### 8. Fragment transitions
-Use Material motion transitions of your choosing to transform between fragments.
-Take a look at material components API
 
-- Tip: https://codelabs.developers.google.com/codelabs/material-motion-android
+
 
 ### Some extra candy
 #### If you are still eager to complete more tasks go ahead and finish the bonus assignments
@@ -162,6 +161,12 @@ https://developer.android.com/topic/libraries/app-startup
 
 ###### 🍭 Deep linking
 Make a single taco category accessible via url (e.g: https://taco-food-api.herokuapp.com/api/v1/category/1)
+
+###### 🍭 Fragment transitions
+Use Material motion transitions of your choosing to transform between fragments.
+Take a look at material components API
+
+- Tip: https://codelabs.developers.google.com/codelabs/material-motion-android
 
 
 ## 🏁 Congratulation you finished the challenge 🏁
