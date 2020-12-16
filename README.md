@@ -1,5 +1,5 @@
-# Taco challenge
-#### Android developer candidates (V1.0)
+# TACO
+#### [T]he [A]ndroid [C]hallenge :-[O] (V1.0)
 
 ## Instructions
 - Fork this repository with your private GitHub account
@@ -17,8 +17,9 @@ The following structure and libraries are already provided. Please do not start 
 use the current setup to continue in order to save time.
 - Dependency injection with Hilt
 - Database access with Room
-- Web client with Retrofit
+- REST service client with Retrofit
 - List view items
+- Basic navigation pattern
 
 ### Tasks
 
