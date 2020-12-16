@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/categoriesFragment"
-        android:name="com.candybytes.taco.ui.fragments.CategoriesFragment"
+        android:name="com.candybytes.taco.ui.fragments.CategoryListFragment"
         android:label="@string/menu_category"
-        tools:layout="@layout/fragment_categories" />
+        tools:layout="@layout/fragment_category_list" />
 
     <fragment
         android:id="@+id/searchFoodFragment"

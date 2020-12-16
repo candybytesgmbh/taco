@@ -6,12 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.candybytes.taco.databinding.FragmentCategoriesBinding
+import com.candybytes.taco.databinding.FragmentCategoryListBinding
 import com.candybytes.taco.ui.vm.CategoriesViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class CategoriesFragment : Fragment() {
+class CategoryListFragment : Fragment() {
 
     private val viewModel: CategoriesViewModel by viewModels()
 
@@ -19,9 +19,9 @@ class CategoriesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return FragmentCategoriesBinding.inflate(layoutInflater, container, false).apply {
-            viewModel = this@CategoriesFragment.viewModel
-            lifecycleOwner = this@CategoriesFragment
+        return FragmentCategoryListBinding.inflate(layoutInflater, container, false).apply {
+            viewModel = this@CategoryListFragment.viewModel
+            lifecycleOwner = this@CategoryListFragment
         }.root
     }
 

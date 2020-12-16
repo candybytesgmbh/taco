@@ -22,6 +22,21 @@ class CategoriesViewModel @ViewModelInject constructor(
         }
     }
 
-    val totalTacoCategories = allTacos.map { "Loaded ${it.size} categories" }
+    private val allFood = liveData {
+        try {
+
+            val foods = tacoService.getAllFoodAsync()
+
+
+
+            emit(tacoService.getAllFoodAsync())
+        } catch (e: Exception) {
+            Timber.e(e)
+        }
+    }
+
+    val totalTacoCategories = allTacos.map { "Loaded ${it.size} categories\nImplement a list view and show all category elements." }
+
+    val totalTacoFood = allFood.map { "Loaded ${it.size} foods" }
 
 }
