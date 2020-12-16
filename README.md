@@ -1,5 +1,7 @@
 # TACO
-#### [T]he [A]ndroid [C]hallenge :-[O] (V1.0)
+#### [T]he [A]ndroid [C]hallenge :-[O]
+Version 1.0
+
 
 ## Instructions
 - Fork this repository with your private GitHub account
