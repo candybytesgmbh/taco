@@ -11,6 +11,15 @@
 - The challenge is divide in separate parts, complete as much as you can
 - Good luck & enjoy your tacos 🌮
 
+
+### Pre-setup
+The following structure and libraries are already provided. Please do not start a new project,
+use the current setup to continue in order to save time.
+- Dependency injection with Hilt
+- Database access with Room
+- Web client with Retrofit
+- List view items
+
 ### Tasks
 
 ###### 1. Navigation & wire frames
@@ -51,7 +60,7 @@ When selecting a result on SearchFragment or an item in FoodListFragment the det
 (FoodFragment) should be opened. Here you should show more details of the single food, exactly like
 the UI/UX from the Figma link is describing it.
 
-- Figma UI/UX file: TODO
+- Figma UI/UX file: https://www.figma.com/file/5UjQCIHu8yv9si2tdBiO47/Taco---Detail?node-id=0%3A1
 - Tip: use a ConstraintLayout
 
 ###### 6. Add image to food detail

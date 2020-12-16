@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/categoriesFragment"
+        android:icon="@drawable/sl_menu_category"
+        android:title="@string/menu_category" />
+
+    <item
+        android:id="@+id/searchFoodFragment"
+        android:icon="@drawable/sl_menu_search"
+        android:title="@string/menu_search" />
+
+</menu>

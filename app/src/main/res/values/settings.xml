@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="taco_service_host" translatable="false">https://taco-food-api.herokuapp.com/</string>
+</resources>
