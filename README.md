@@ -60,7 +60,7 @@ When selecting a result on SearchFragment or an item in FoodListFragment the det
 (FoodFragment) should be opened. Here you should show more details of the single food, exactly like
 the UI/UX from the Figma link is describing it.
 
-![GitHub Logo](/images/details.png)
+![GitHub Logo](/images/detail.png)
 
 - Figma UI/UX file: https://www.figma.com/file/5UjQCIHu8yv9si2tdBiO47/Taco---Detail?node-id=0%3A1
 - Tip: use a ConstraintLayout
