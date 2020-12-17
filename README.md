@@ -23,7 +23,7 @@ use the current setup to continue in order to save time.
 - Dependency injection with Hilt
 - Database access with Room
 - REST service client with Retrofit
-- List view items
+- List view items layouts
 - Basic navigation pattern
 
 ##### Links to Libraries you might find helpful
@@ -81,10 +81,14 @@ Use Jetpack Navigation to navigate between Fragments.
 Use ViewModel to hold the content.
 Store content in LiveData, access it in views with databinding.
 
-Your main activity UI should look like this:
-(use bottom bar navigation to switch between "Category list" and "Search foods")
+Make yourself familiar with the project. It's a single activity based architecture.
+Here is an example how your final UI structure should look like:
 ![GitHub Logo](/images/structure.png)
-Prepare all missing Fragments and the general navigation structure.
+You need to create all missing Fragments yourself
+
+This is your starting point:
+![GitHub Logo](/images/baseui.webp)
+(use bottom bar navigation to switch between [CategoryFragment] and [SearchFoodFragment])
 
 ###### 2. Web requests [CategoryFragment]
 Request and display all taco categories in a list.
@@ -119,6 +123,7 @@ Filter the search results based on "description" of a food item.
 Selecting an item on SearchFoodFragment should lead to the detail screen of a food (FoodFragment). 
 More details of a single food should be displayed on that screen, exactly like
 the UI/UX from Figma describes it UI components. (Font, Color, Shape, Size...)
+Load missing category name information from the web endpoint.
 
 ![GitHub Logo](/images/detail.webp)
 
@@ -128,6 +133,7 @@ TODOs:
 - Link [SearchFoodFragment] item to open [FoodFragment]
 - Build UI/UX exactly like described in Figma (free registration required)
 https://www.figma.com/file/5UjQCIHu8yv9si2tdBiO47/Taco---Detail?node-id=0%3A1
+- Async update category name with REST API
 
 ###### 7. Add an image to a food [FoodFragment]
 Let the user add an Image via an ImagePicker or Camera to a single food item. The image should be stored locally
@@ -135,7 +141,7 @@ and displayed when the user shows the detailed food item.
 
 TODOs:
 - Make sure to use ActivityResultContracts. 
-- Use a image cache library to display the picture
+- Use a image cache library to display a picture
 
 ###### 8. Load category name on food detail screen [FoodFragment]
 Request category name for this food item from web dynamically when its shown on detail screen.
@@ -152,6 +158,8 @@ TODOs:
 - Create CategoryFragment
 - Setup navigation component and safe args
 - Prepare database query
+- Tip: reuse [SearchFoodFragment]
+
 
 
 ### Some extra candy
@@ -197,3 +205,4 @@ Take a look at material components API
 ## 🏁 Congratulation you finished the challenge 🏁
 #### Make sure everything is pushed to your git repository. Please send us an update about your finished project.
 #### Tip: don't forget about code documentation
+#### If you like send us a feedback about the challenge
