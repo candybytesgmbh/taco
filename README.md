@@ -82,12 +82,12 @@ Use ViewModel to hold the content.
 Store content in LiveData, access it in views with databinding.
 
 Make yourself familiar with the project. It's a single activity based architecture.
-Here is an example how your final UI structure should look like:
-![GitHub Logo](/images/structure.png)
+Here is an example how your final UI structure should look like:<br>
+![GitHub Logo](/images/structure.png)<br>
 You need to create all missing Fragments yourself
 
-This is your starting point:
-![GitHub Logo](/images/baseui.webp)
+This is your starting point:<br>
+![GitHub Logo](/images/baseui.webp)<br>
 (use bottom bar navigation to switch between [CategoryFragment] and [SearchFoodFragment])
 
 ###### 2. Web requests [CategoryFragment]
