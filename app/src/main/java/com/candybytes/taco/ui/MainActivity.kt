@@ -3,6 +3,7 @@ package com.candybytes.taco.ui
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
 
+    private lateinit var toolbar: Toolbar
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -31,6 +34,7 @@ class MainActivity : AppCompatActivity() {
             // Specify the current activity as the lifecycle owner.
             viewModel = this@MainActivity.viewModel
             lifecycleOwner = this@MainActivity
+            this@MainActivity.toolbar = toolbar
 
             //access navigation controller
             val navHostFragment =
@@ -42,7 +46,6 @@ class MainActivity : AppCompatActivity() {
             toolbar.setupWithNavController(navController, appBarConfiguration)
             navBottomBar.setupWithNavController(navController)
         }
-
     }
 
     override fun onSupportNavigateUp(): Boolean {

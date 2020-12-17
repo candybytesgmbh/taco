@@ -18,11 +18,11 @@ Version 1.0
 ### Pre-setup
 The following structure and libraries are already provided. Please do not start a new project,
 use the current setup to continue in order to save time.
-##### This proje provides
-- A unfinished basic Android App implementation to start
+##### This project provides
+- An unfinished basic Android App implementation to start
 - Dependency injection with Hilt
-- Database access with Room
-- REST service client with Retrofit
+- Database access with Room [FoodDb]
+- REST service client with Retrofit [TacoService]
 - List view items layouts
 - Basic navigation pattern
 - ViewModels & Databinding
@@ -95,9 +95,9 @@ This is your starting point:<br>
 ###### 2. Web request [CategoryListFragment]
 Request and display all taco categories in a list.
 Show the list of categories in a two column staggered RecyclerView.
-Use the remote repository with REST Api. Documentation can be found here:
+Use the remote repository with REST Api [TacoService]. Documentation can be found here:
 https://taco-food-api.herokuapp.com/#api-Category-GetCategoriesList
-Use "item_category.xml" layout as list item.
+Use "item_category.xml" layout as list item. (use databinding)
 Load the total amount of "Food" items referenced in a category and display that information in the item.
 
 TODO:
@@ -107,7 +107,7 @@ TODO:
 - Async update item amount per category from the local database
 
 ###### 3. Database [SearchFoodFragment]
-Access the local database provided in the App assets to load "food" information.
+Access the local database [FoodDb] provided in the App assets to load "food" information.
 Display all food elements in a single column List view.
 Use paging adapters, not load all search results at once into your list.
 Use "item_food.xml" layout as list item.
@@ -118,7 +118,7 @@ TODOs:
 - Load paged content from database
 
 ###### 5. Search [SearchFoodFragment]
-Add a search box into the toolbar, filter database food results by the search term.
+Add a search box into the toolbar, filter local database [FoodDb] food results by the search term.
 Filter the search results based on "description" of a food item.
 
 ###### 6. Food details [FoodFragment]
@@ -151,8 +151,8 @@ By clicking on the category the user can jump to the category detail page [Categ
 
 ###### 9. Category details [CategoryFragment]
 Selecting a category in the [CategoryListFragment] or from [FoodFragment] opens the [CategoryFragment], showing all 
-foods that are added to this category. Show category name at the top, use navigation arguments to 
-send information between fragments. Access the food database and query all foods that
+foods that are added to this category. Show the category name at the top, use navigation arguments to 
+send information between fragments. Access the food database [FoodDb] and query all foods that
 have the selected category, again use paging. Display a preview information of a food item. 
 Might make sense to use the same 
 
@@ -202,7 +202,6 @@ Use Material motion transitions of your choosing to transform between fragments.
 Take a look at material components API
 
 - Tip: https://codelabs.developers.google.com/codelabs/material-motion-android
-
 
 ## 🏁 Congratulation you finished the challenge 🏁
 #### Make sure everything is pushed to your git repository. Please send us an update about your finished project.
