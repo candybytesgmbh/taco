@@ -1,9 +1,7 @@
 package com.candybytes.taco.vo
 
-import androidx.room.Entity
 import com.google.gson.annotations.SerializedName
 
-@Entity(primaryKeys = ["nutrient"])
 data class Nutrient(
     /**
      */
@@ -11,7 +9,8 @@ data class Nutrient(
     val unit: String = "",
 
     /**
+     *
      */
     @SerializedName("qty")
-    val qty: Double = -1.0
+    val qty: String = ""
 )

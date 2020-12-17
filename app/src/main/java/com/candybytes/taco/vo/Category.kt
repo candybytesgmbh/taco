@@ -1,15 +1,17 @@
 package com.candybytes.taco.vo
 
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
-@Entity(primaryKeys = ["category"])
+@Entity(tableName = "categories")
 data class Category(
 
     /**
      * Category unique ID.
      */
     @SerializedName("id")
+    @PrimaryKey(autoGenerate = false)
     val id: Int = -1,
 
     /**

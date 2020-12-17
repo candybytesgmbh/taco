@@ -82,51 +82,76 @@ Use ViewModel to hold the content.
 Store content in LiveData, access it in views with databinding.
 
 Your main activity UI should look like this:
-(use bottom bar navigation to switch between Categories and Search)
+(use bottom bar navigation to switch between "Category list" and "Search foods")
 ![GitHub Logo](/images/structure.png)
 Prepare all missing Fragments and the general navigation structure.
 
-###### 2. Web requests
-Request and display all taco categories in a list. Show the information in two columns.
+###### 2. Web requests [CategoryFragment]
+Request and display all taco categories in a list.
+Show the list of categories in a two column staggered RecyclerView.
 Use the remote repository with REST Api. Documentation can be found here:
 https://taco-food-api.herokuapp.com/#api-Category-GetCategoriesList
+Use "item_category.xml" layout as list item.
+Load the total amount of "Food" items referenced in a category and display that information in the item.
 
-###### 3. Database
+TODO:
+- Create list view
+- Create Adapter & ViewHolder
+- Load content from REST client
+- Async update item amount per category from the local database
+
+###### 3. Database [SearchFoodFragment]
 Access the local database provided in the App assets to load "food" information.
-Load search results based on "description" of a food item. Display search results as a single
-column list. Use paging adapters, not load all search results at once into your list.
+Display all food elements in a single column List view.
+Use paging adapters, not load all search results at once into your list.
+Use "item_food.xml" layout as list item.
 
-###### 5. Search
-Add a search option into the toolbar, filter database food results by the search term.
+TODOs:
+- Create list view
+- Create Adapter & ViewHolder
+- Load paged content from database
 
-###### 6. Category details
-Selecting a category in the CategoryListFragment leads the user to the FoodListFragment, showing all 
+###### 5. Search [SearchFoodFragment]
+Add a search box into the toolbar, filter database food results by the search term.
+Filter the search results based on "description" of a food item.
+
+###### 6. Food details [FoodFragment]
+Selecting an item on SearchFoodFragment should lead to the detail screen of a food (FoodFragment). 
+More details of a single food should be displayed on that screen, exactly like
+the UI/UX from Figma describes it UI components. (Font, Color, Shape, Size...)
+
+![GitHub Logo](/images/detail.webp)
+
+TODOs:
+- Crate new Fragment
+- Use navigation component and safe args
+- Link [SearchFoodFragment] item to open [FoodFragment]
+- Build UI/UX exactly like described in Figma (free registration required)
+https://www.figma.com/file/5UjQCIHu8yv9si2tdBiO47/Taco---Detail?node-id=0%3A1
+
+###### 7. Add an image to a food [FoodFragment]
+Let the user add an Image via an ImagePicker or Camera to a single food item. The image should be stored locally
+and displayed when the user shows the detailed food item.
+
+TODOs:
+- Make sure to use ActivityResultContracts. 
+- Use a image cache library to display the picture
+
+###### 8. Load category name on food detail screen [FoodFragment]
+Request category name for this food item from web dynamically when its shown on detail screen.
+By clicking on the category the user can jump to the category detail page [CategoryFragment]. 
+
+###### 9. Category details [CategoryFragment]
+Selecting a category in the [CategoryListFragment] or from [FoodFragment] opens the [CategoryFragment], showing all 
 foods that are added to this category. Show category name at the top, use navigation arguments to 
 send information between fragments. Access the food database and query all foods that
 have the selected category, again use paging. Display a preview information of a food item. 
 Might make sense to use the same 
 
-###### 7. Food details
-When selecting a result on SearchFoodFragment or an item in FoodListFragment the detail screen of a food 
-(FoodFragment) should be opened. More details of a single food should be displayed on that screen, exactly like
-the UI/UX from Figma describes it UI components. (Font, Color, Shape, Size...)
-
-![GitHub Logo](/images/detail.webp)
-
-- Figma UI/UX (free registration required): https://www.figma.com/file/5UjQCIHu8yv9si2tdBiO47/Taco---Detail?node-id=0%3A1
-
-###### 6. Add an image to food detail
-Let the user add an Image via an ImagePicker or Camera to a single food item. The image should be stored locally
-and displayed on the FoodFragment everytime the user shows the detailed food item.
-
-- Make sure to use ActivityResultContracts. 
-- Use a image cache library to display the picture
-
-###### 7. Load category name on food detail screen
-Request category name for this food item from web dynamically when its shown on detail screen.
-By clicking on the category the user can jump to the category detail page. 
-
-
+TODOs:
+- Create CategoryFragment
+- Setup navigation component and safe args
+- Prepare database query
 
 
 ### Some extra candy
