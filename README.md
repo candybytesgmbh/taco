@@ -18,13 +18,15 @@ Version 1.0
 ### Pre-setup
 The following structure and libraries are already provided. Please do not start a new project,
 use the current setup to continue in order to save time.
-##### This repository provides
-- A unfinished basic App implementation to start
+##### This proje provides
+- A unfinished basic Android App implementation to start
 - Dependency injection with Hilt
 - Database access with Room
 - REST service client with Retrofit
 - List view items layouts
 - Basic navigation pattern
+- ViewModels & Databinding
+(if your are not familiar with any of those libraries, please check them out) 
 
 ##### Links to Libraries you might find helpful
 * [Foundation][0] - Components for core system capabilities, Kotlin extensions and support for
@@ -76,7 +78,7 @@ use the current setup to continue in order to save time.
 
 ## Your tasks
 
-###### 1. Navigation & wire frames
+###### 1. Project overview (Navigation & wire frames)
 Use Jetpack Navigation to navigate between Fragments.
 Use ViewModel to hold the content.
 Store content in LiveData, access it in views with databinding.
@@ -90,7 +92,7 @@ This is your starting point:<br>
 ![GitHub Logo](/images/baseui.webp)<br>
 (use bottom bar navigation to switch between [CategoryFragment] and [SearchFoodFragment])
 
-###### 2. Web requests [CategoryFragment]
+###### 2. Web request [CategoryFragment]
 Request and display all taco categories in a list.
 Show the list of categories in a two column staggered RecyclerView.
 Use the remote repository with REST Api. Documentation can be found here:
