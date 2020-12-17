@@ -1,4 +1,4 @@
-# TACO
+# TACO 🌮
 #### [T]he [A]ndroid [C]hallenge :-[O]
 Version 1.0
 
@@ -10,9 +10,9 @@ Version 1.0
 - Try to use libraries that are included in Android Jetpack before using any other 3rd party
 - Try to support and use Material Design everywhere possible
 - Some parts might be outdated, use wherever you can MVVM, Single Activity and other concepts...
-- The challenge is divide in separate parts, complete as much as you can
-- 100% Kotlin code
-- Good luck & enjoy your tacos 🌮
+- The challenge is divided in separate parts, complete as much as you can
+- 100% Kotlin code!
+- Good luck & enjoy your TACOs 🌮
 
 
 ### Pre-setup
@@ -84,7 +84,7 @@ Store content in LiveData, access it in views with databinding.
 Make yourself familiar with the project. It's a single activity based architecture.
 Here is an example how your final UI structure should look like:<br>
 ![GitHub Logo](/images/nav.webp)<br>
-You need to create all missing Fragments yourself
+You need to create all missing Fragments by yourself.
 
 This is your starting point:<br>
 ![GitHub Logo](/images/baseui.webp)<br>
@@ -205,4 +205,4 @@ Take a look at material components API
 ## 🏁 Congratulation you finished the challenge 🏁
 #### Make sure everything is pushed to your git repository. Please send us an update about your finished project.
 #### Tip: don't forget about code documentation
-#### If you like send us a feedback about the challenge
+#### If you like, send us a feedback about the challenge
