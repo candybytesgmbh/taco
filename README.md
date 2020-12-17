@@ -90,9 +90,9 @@ You need to create all missing Fragments by yourself.
 
 This is your starting point:<br>
 ![GitHub Logo](/images/baseui.webp)<br>
-(use bottom bar navigation to switch between [CategoryFragment] and [SearchFoodFragment])
+(use bottom bar navigation to switch between [CategoryListFragment] and [SearchFoodFragment])
 
-###### 2. Web request [CategoryFragment]
+###### 2. Web request [CategoryListFragment]
 Request and display all taco categories in a list.
 Show the list of categories in a two column staggered RecyclerView.
 Use the remote repository with REST Api. Documentation can be found here:
