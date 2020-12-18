@@ -11,7 +11,6 @@ Version 1.0
 - Use MVVM, Single Activity and other concepts where every you can...
 - The challenge is divided into separate parts, complete as many as you can
 - Please stop if you are hitting the 4 hour time frame!!
-- 100% Kotlin code!
 - Good luck & enjoy your TACOs 🌮
 
 
@@ -90,6 +89,7 @@ You need to create all missing Fragments by yourself.
 
 This is your starting point:<br>
 ![GitHub Logo](/images/baseui.webp)<br>
+![GitHub Logo](/images/main.webp)<br>
 (use bottom bar navigation to switch between [CategoryListFragment] and [SearchFoodFragment])
 
 ###### 2. Web request [CategoryListFragment]
