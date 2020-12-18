@@ -3,14 +3,14 @@
 Version 1.0
 
 
-### Instructions
+### General Instructions
 - Fork this repository with your private GitHub account
 - After you are finished provide access to your fork for the user "sebastian-hoebarth"
-- Please stop if you are hitting the 4 hour time frame
-- Try to use libraries that are included in Android Jetpack before using any other 3rd party
-- Try to support and use Material Design everywhere possible
-- Some parts might be outdated, use wherever you can MVVM, Single Activity and other concepts...
-- The challenge is divided in separate parts, complete as much as you can
+- Try to use libraries that are included in Android Jetpack before using any other 3rd party library
+- Try to support and use Material Design where ever possible
+- Use MVVM, Single Activity and other concepts where every you can...
+- The challenge is divided into separate parts, complete as many as you can
+- Please stop if you are hitting the 4 hour time frame!!
 - 100% Kotlin code!
 - Good luck & enjoy your TACOs 🌮
 
@@ -19,14 +19,14 @@ Version 1.0
 The following structure and libraries are already provided. Please do not start a new project,
 use the current setup to continue in order to save time.
 ##### This project provides
-- An unfinished basic Android App implementation to start
+- An unfinished basic Android App implementation to start width
 - Dependency injection with Hilt
 - Database access with Room [FoodDb]
 - REST service client with Retrofit [TacoService]
-- List view items layouts
+- List view item layouts
 - Basic navigation pattern
 - ViewModels & Databinding
-(if your are not familiar with any of those libraries, please check them out) 
+(if you are not familiar with any of those libraries, please check them out) 
 
 ##### Links to Libraries you might find helpful
 * [Foundation][0] - Components for core system capabilities, Kotlin extensions and support for
@@ -83,8 +83,8 @@ Use Jetpack Navigation to navigate between Fragments.
 Use ViewModel to hold the content.
 Store content in LiveData, access it in views with databinding.
 
-Make yourself familiar with the project. It's a single activity based architecture.
-Here is an example how your final UI structure should look like:<br>
+Make yourself familiar with the project. It's a single activity-based architecture.
+Here is an example of how your final UI structure should look like:<br>
 ![GitHub Logo](/images/nav.webp)<br>
 You need to create all missing Fragments by yourself.
 
@@ -94,7 +94,7 @@ This is your starting point:<br>
 
 ###### 2. Web request [CategoryListFragment]
 Request and display all taco categories in a list.
-Show the list of categories in a two column staggered RecyclerView.
+Show the list of categories in a two-column staggered RecyclerView.
 Use the remote repository with REST Api [TacoService]. Documentation can be found here:
 https://taco-food-api.herokuapp.com/#api-Category-GetCategoriesList
 Use "item_category.xml" layout as list item. (use databinding)
@@ -108,7 +108,7 @@ TODO:
 
 ###### 3. Database [SearchFoodFragment]
 Access the local database [FoodDb] provided in the App assets to load "food" information.
-Display all food elements in a single column List view.
+Display all food elements in a single column list view.
 Use paging adapters, not load all search results at once into your list.
 Use "item_food.xml" layout as list item.
 
@@ -130,7 +130,7 @@ Load missing category name information from the web endpoint.
 ![GitHub Logo](/images/detail.webp)
 
 TODOs:
-- Crate new Fragment
+- Create new Fragment
 - Use navigation component and safe args
 - Link [SearchFoodFragment] item to open [FoodFragment]
 - Build UI/UX exactly like described in Figma (free registration required)
@@ -143,17 +143,17 @@ and displayed when the user shows the detailed food item.
 
 TODOs:
 - Make sure to use ActivityResultContracts. 
-- Use a image cache library to display a picture
+- Use an image cache library to display a picture
 
 ###### 8. Load category name on food detail screen [FoodFragment]
-Request category name for this food item from web dynamically when its shown on detail screen.
+Request category name for this food item from web dynamically when it's shown on the detail screen.
 By clicking on the category the user can jump to the category detail page [CategoryFragment]. 
 
 ###### 9. Category details [CategoryFragment]
 Selecting a category in the [CategoryListFragment] or from [FoodFragment] opens the [CategoryFragment], showing all 
 foods that are added to this category. Show the category name at the top, use navigation arguments to 
 send information between fragments. Access the food database [FoodDb] and query all foods that
-have the selected category, again use paging. Display a preview information of a food item. 
+have the selected category, again use paging. Display preview information of a food item. 
 Might make sense to use the same 
 
 TODOs:
@@ -168,11 +168,11 @@ TODOs:
 #### If you are still eager to complete more tasks go ahead and finish the bonus assignments
 
 ###### 🍭 Web requests
-On mobile devices internet might fail due to connection issues.
-Prepare error indications when content can't be loaded from web.
+On mobile devices, the internet might fail due to connection issues.
+Prepare error indications when content can't be loaded from the web.
 
 ###### 🍭 Edge to Edge 
-Work with display insets and create and edge to edge feeling. Top and bottom bars should fade
+Work with display insets and create an edge to edge feel. Top and bottom bars should fade
 away when scrolling in a List view. 
 Tip: use helper library from Chris
 https://github.com/chrisbanes/insetter
@@ -183,13 +183,13 @@ Tip: checkout material design guidelines
 https://material.io/design/material-studies/fortnightly.html#shape
 
 ###### 🍭 Memory leak
-Finding memory leaks is a very important task when developing high quality apps. 
+Finding memory leaks is a very important task when developing high-quality apps. 
 Make sure there is no memory leak. I might have inserted one ;-)
 Tip: there is a nice library for detecting leaks
 https://square.github.io/leakcanary/
 
 ###### 🍭 Performance
-Developing apps for all kind of devices is essential on Android and therefore performance 
+Developing apps for all kinds of devices is essential on Android and therefore performance 
 optimization is crucial. Initialize all necessary libraries before Application.onCreate() is executed.
 Move your DB initialization into a content provider, checkout this helper library
 https://developer.android.com/topic/libraries/app-startup
@@ -198,12 +198,12 @@ https://developer.android.com/topic/libraries/app-startup
 Make a single taco category accessible via url (e.g: https://taco-food-api.herokuapp.com/api/v1/category/1)
 
 ###### 🍭 Fragment transitions
-Use Material motion transitions of your choosing to transform between fragments.
+Use Material motion transitions of your choice to transform between fragments.
 Take a look at material components API
 
 - Tip: https://codelabs.developers.google.com/codelabs/material-motion-android
 
 ## 🏁 Congratulation you finished the challenge 🏁
-#### Make sure everything is pushed to your git repository. Please send us an update about your finished project.
+#### Make sure everything is pushed to your git repository. Please inform us when you have finished the challenge. We are not automatically notified.
 #### Tip: don't forget about code documentation
-#### If you like, send us a feedback about the challenge
+#### We’d be happy to receive your feedback on the challenge. Let us know how you liked it.

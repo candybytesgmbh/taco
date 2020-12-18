@@ -7,6 +7,12 @@
         android:title="@string/menu_category" />
 
     <item
+        android:id="@+id/time"
+        android:enabled="false"
+        android:icon="@drawable/ic_baseline_access_time_24"
+        android:title="00:00" />
+
+    <item
         android:id="@+id/searchFoodFragment"
         android:icon="@drawable/sl_menu_search"
         android:title="@string/menu_search" />
