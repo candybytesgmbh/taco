@@ -204,7 +204,7 @@ Take a look at material components API
 
 - Tip: https://codelabs.developers.google.com/codelabs/material-motion-android
 
-
+## Footnote
 #### Make sure everything is pushed to your git repository. Please inform us when you have finished the challenge. We are not automatically notified.
 #### Tip: don't forget about code documentation
 #### We’d be happy to receive your feedback on the challenge. Let us know how you liked it.
