@@ -162,10 +162,11 @@ TODOs:
 - Prepare database query
 - Tip: reuse [SearchFoodFragment]
 
+## 🏁 Congratulation you finished the challenge 🏁
 
 
 ### Some extra candy
-#### If you are still eager to complete more tasks go ahead and finish the bonus assignments
+#### If you are still hungry for more, choose one of the below bonus assignments for implementation. Happy coding!
 
 ###### 🍭 Web requests
 On mobile devices, the internet might fail due to connection issues.
@@ -203,7 +204,7 @@ Take a look at material components API
 
 - Tip: https://codelabs.developers.google.com/codelabs/material-motion-android
 
-## 🏁 Congratulation you finished the challenge 🏁
+
 #### Make sure everything is pushed to your git repository. Please inform us when you have finished the challenge. We are not automatically notified.
 #### Tip: don't forget about code documentation
 #### We’d be happy to receive your feedback on the challenge. Let us know how you liked it.
